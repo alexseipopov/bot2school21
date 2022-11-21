@@ -7,7 +7,7 @@ from selenium.webdriver.common.keys import Keys
 
 from .config import *
 
-driver = webdriver.Chrome("Путь к файлу хромиума, желательно положить в этой же директории")
+driver = webdriver.Chrome(PATH_DRIVER)
 driver.get('https://applicant.21-school.ru')
 
 email = driver.find_element(By.ID, 'email')
